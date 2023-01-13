@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header.scss";
+@import "blocks/about.scss";
+@import "blocks/gifts.scss";
+@import "blocks/signup.scss";
+@import "blocks/posts.scss";
+@import "blocks/footer.scss";

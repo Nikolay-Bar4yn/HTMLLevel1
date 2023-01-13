@@ -1,0 +1,114 @@
+.about{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    grid-template-areas: 
+                 'find imgright'
+                'imgleft work';
+
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(28px);
+
+}
+.about__find{
+     grid-area: find;
+
+    background: #F1F1F2;
+  
+      justify-content: center;
+      align-items: center;
+ 
+    display: grid;
+
+ div{
+        max-width: 440px;
+    }
+ h1{
+        font-size: px-to-rem(56px);
+        line-height: px-to-rem(65px);
+        margin-bottom: 45px;
+        font-weight: 500;
+    }
+p{
+        margin-bottom: 26px;
+    }
+}
+.about__img-right{
+    grid-area: imgright;
+}
+.about__img-left{
+    grid-area: imgleft;
+}
+.about__work{
+    grid-area: work;
+
+    background: #F1F1F2;
+
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+
+div{
+        max-width: 440px;
+    }
+    h2{
+        font-size: px-to-rem(20px);
+        line-height: px-to-rem(45px);
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+ p{
+        margin-bottom: 26px;
+    }
+}
+.btn-orange{
+    text-transform: uppercase;
+    background: $orange;
+    color:$white;
+    padding: 20px 35px;
+    text-decoration: none;
+    font-size: px-to-rem(18px);
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn-tranparent-orange{
+    text-transform: uppercase;
+    border: 1px solid $orange;
+    color:$orange;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-size: px-to-rem(18px);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+@media (max-width:1000px){
+    .about{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+                    'imgright'
+                    'find'
+                    'imgleft'
+                    'work';
+    }
+    .about__img-left, .about__img-right{
+        background: #F1F1F2;
+    }
+    .about__img-left img, .about__img-right img{
+        margin: 0 auto;
+    }
+    .about__work, .about__find{
+        padding: 32px 20px;
+    }
+}
+@media (max-width:1000px){
+    .about__find h1{
+        font-size: px-to-rem(40px);
+        line-height: px-to-rem(50px);
+        margin-bottom: 24px;
+    }
+}
